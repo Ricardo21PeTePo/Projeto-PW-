@@ -1,0 +1,139 @@
+html {
+    background: url(https://miro.medium.com/max/8160/1*OIH8BFWQ3N5JsJUpFCYe1A.png) no-repeat center fixed;
+    background-size: cover;
+}
+body{
+    padding: 20px;
+    background: scroll;
+    background-color: rgb(0, 0, 0,.9);
+    width: auto;
+    margin: 1em;
+    
+}
+#topo {
+    height: auto;
+    border-bottom: 1px #ffffff solid;
+}
+#logo {
+    width: auto;
+    margin-left: 35px;
+    height: 200px;
+}
+#fraseTop {
+    margin-top: 100px;
+    margin-right: 450px;
+    float: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+#navbar {
+    background-color: rgb(0, 0, 0,.7);
+    position: relative;
+    align-content: center;
+    left: 300px;
+    height: 0px;
+    top: 10px;
+    padding: 0px;
+    width: 70%;
+}
+#lista_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.navItem {  
+    display: inline-block;
+    padding: 14px 16px;
+    background-color: rgb(0, 0, 0,.7) ;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.navItem a {   
+    color: white;              
+    text-decoration: none;
+}
+.navItem:hover {
+    background-color: rgba(111,0,0);
+}
+#rodape {
+    position: relative;
+    top: 30px;
+    background-color: rgb(0, 0, 0,.7);
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#infos {
+    width: 40%;
+    margin-left: 10px;
+    color: white;
+}
+#paginas {
+    width: auto;
+    justify-content: center;
+}
+#listaRoda {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(0, 0, 0,.7)
+}
+.rodaitem {
+    display: inline-block;
+    padding: 14px 16px;
+    background-color: rgb(0, 0, 0,.7);
+    border-right: 1px solid white;
+}
+.rodaitem a {
+    color: white;
+    text-decoration: none;
+}
+.rodaitem:hover{
+    background-color: rgb(111,0,0);
+}
+#corpo {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    color: white;
+}
+#listaOpc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.opc {
+    display: flexbox;
+    padding: 30px;
+    background-color: rgb(0, 0, 0,.7);
+    border-top: 5px solid rgb(111,0,0);
+}
+.opc a {   
+    color: white;              
+    text-decoration: none;
+}
+.opc:hover {
+    background-color: rgb(111,0,0);
+}
+img#cadeira{
+    position:relative;
+    left: 550px;
+    top: 40px;
+}
+
+.anime{
+    opacity: 0;
+    transform: translate3d(-200px,0,0);
+    transition: .3s;
+}
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}

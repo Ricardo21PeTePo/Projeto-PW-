@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+    <head>
+        <meta charset="utf-8">
+        <title>Pagina de Relatorios</title>
+        <link rel="stylesheet" type="text/css" href="Pagina4.css" media="screen"/>
+        <link rel="icon" href="https://www.pinclipart.com/picdir/big/86-862829_movie-clipart-soda-copo-de-cinema-png-transparent.png">
+        <script type="text/javascript" src="carregarinfo1.js"></script>
+        <script type="text/javascript" src="carregarinfo2.js"></script>
+        <script type="text/javascript" src="carregarinfo3.js"></script>
+        <script type="text/javascript" src="relatorio1.js"></script>
+        <script type="text/javascript" src="relatorio2.js"></script>
+        <script type="text/javascript" src="relatorio3.js"></script>
+    </head>
+    <body>
+        <header id="topo">
+            <div>
+                <a href="Pagina Principal.html"><img id="logo" src="https://www.pinclipart.com/picdir/big/86-862829_movie-clipart-soda-copo-de-cinema-png-transparent.png" alt="logo"></a>
+                <h1 id="fraseTop">Sistema de Cinema</h1>
+            </div>
+            <nav id="navbar">
+                <ul id="lista_nav">
+                    <li class="navItem"><a href="Pagina Principal.html">Pagina Principal</a></li>
+                    <li class="navItem"><a href="Pagina1.html">Pagina de Salas</a></li>
+                    <li class="navItem"><a href="Pagina2.html">Pagina de Filmes</a></li>
+                    <li class="navItem"><a href="Pagina3.html">Pagina de Sessões</a></li>
+                    <li class="navItem"><a href="Pagina4.html">Pagina de Relatorios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="corpo">
+            <p>Pagina de Relatórios</p>
+        </div>
+        <div>
+            <button id="carr1" onclick="carregarinfo1()">Carregar Tabela de Salas</button>
+            <button id="carr2" onclick="carregarinfo2()">Carregar Tabela de Filmes</button>
+            <button id="carr3" onclick="carregarinfo3()">Carregar Tabela de Sessões</button>
+        </div>
+        <div id="dtCinema">
+            <table id="tbCinema4">
+                <thead>
+                    <tr>
+                        <td>Numero</td>
+                        <td>Código</td>
+                        <td>Nome</td>
+                        <td>Capacidade</td>
+                        <td>Tipo</td>
+                        <td>Acessivel</td>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <br>
+            <br>
+            <div id="dtFilme">
+                <table id="tbFilme4">
+                    <thead>
+                        <tr>
+                            <td>Numero</td>
+                            <td>Código</td>
+                            <td>Nome</td>
+                            <td>Ano de Lançamento</td>
+                            <td>Diretor</td>
+                            <td>Atores</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="dtSessao">
+                <table id="tbSessao4">
+                    <thead>
+                        <tr>
+                            <td>Numero</td>
+                            <td>Código do Filme</td>
+                            <td>Código da Sala</td>
+                            <td>Data</td>
+                            <td>Horário</td>
+                            <td>Preço do Ingresso</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="relatório1">
+                <form>
+                    <label for="tipoRel">Tipo de sala</label><br>
+                    <input type="text" id="tipoRel"><br><br>
+                    <label for="capRel">Capacidade minima</label><br>
+                    <input type="number" min="1" max="1000" id="capRel"><br><br>
+                    <input type="button" value="Procurar" onclick="relatorio1()">
+                </form>
+                <br>
+                <p>Os resultados vão aparecer em caixas de alertas</p>
+                <p>Resultado do ultimo encontrado:</p>
+                <div id="mostrarRel1"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="relatório2">
+                <form>
+                    <label for="anoRel">Data minima de lançamento</label><br>
+                    <input type="number" min="1" max="2021" id="anoRel"><br><br>
+                    <label for="atorRel">Ator que participou</label><br>
+                    <input type="text" id="atorRel"><br><br>
+                    <input type="button" value="Procurar" onclick="relatorio2()">
+                </form>
+                <br>
+                <p>Os resultados vão aparecer em caixas de alertas</p>
+                <p>Resultado do ultimo encontrado:</p>
+                <div id="mostrarRel2"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="relatório3">
+                <form>
+                    <label for="datMin">Data minima da sessão</label><br>
+                    <input type="date" id="dataMin"><br><br>
+                    <label for="dataMax">Data maxima da sessão</label><br>
+                    <input type="date" id="dataMax"><br><br>
+                    <input type="button" value="Procurar" onclick="relatorio3()">
+                </form>
+                <br>
+                <p>Os resultados vão aparecer em caixas de alertas</p>
+                <p>Resultado do ultimo encontrado:</p>
+                <div id="mostrarRel3"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+        <div id="rodape">
+            <div id="infos">
+                <p>Site criado pelos aluno Ricardo Teixeira e Vinicius Berotolo, estudantes do curso de Analise e 
+                    Desenvolvimento de sistemas no IFSP campus São Carlos.
+                </p>
+            </div>
+            <div id="paginas">
+                <ul id="listaRoda">
+                    <li class="rodaitem"><a href="Pagina Principal.html">Pagina Principal</a></li>
+                    <li class="rodaitem"><a href="Pagina1.html">Pagina de Salas</a></li>
+                    <li class="rodaitem"><a href="Pagina2.html">Pagina de Filmes</a></li>
+                    <li class="rodaitem"><a href="Pagina3.html">Pagina de Sessões</a></li>
+                    <li class="rodaitem"><a href="Pagina4.html">Pagina de Relatorios</a></li>                 
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
